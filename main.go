@@ -20,5 +20,9 @@ func main() {
 	var num int
 	fmt.Print("Введите число (до скольки считать): ")
 	fmt.Scan(&num)
+	if num <= 0 {
+		fmt.Println("N > 0!")
+		return
+	}
 	fizzbuzz(num)
 }
